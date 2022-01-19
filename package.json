@@ -1,0 +1,17 @@
+{
+  "name": "express-app-public-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "(pm2 start ./app --name app || true) && pm2 logs app",
+    "restart": "pm2 restart app && pm2 logs app",
+    "stop": "pm2 stop app"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "~4.15.5"
+  },
+  "author": "",
+  "license": "ISC"
+}
